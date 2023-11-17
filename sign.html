@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign-In</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+      <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center py-4 px-xl-5">
+            <div class="col-lg-3">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0"><span class="text-primary"></span>LASC</h1>
+                </a>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
+                        <small>NH91, Tehsil Dadri, Greater Noida, Uttar Pradesh 201314</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
+                        <small>admissions@snu.edu.in</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-phone text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
+                        <small>+91-120-2662002</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+     <!-- Header Start -->
+    <div class="container-fluid page-header" style="margin-bottom: 90px;">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+                <h3 class="display-4 text-white text-uppercase">Sign In</h3>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+ <!-- Registration Start -->
+<div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-7 mb-5 mb-lg-0">
+        <div class="mb-4">
+          <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Courses</h5>
+        </div>
+        <p class="text-white">Have you ever felt left out or unable to make what is being taught at college? If the answer is a nod, Worry not, we are here to have your back!</p>
+        <ul class="list-inline text-white m-0">
+          <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Student Friendly courses</li>
+          <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Peers as Teachers</li>
+          <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Everything online!</li>
+        </ul>
+      </div>
+      <div class="col-lg-5">
+        <div class="card border-0">
+          <div class="card-header bg-light text-center p-4">
+            <h1 class="m-0">Sign In Now</h1>
+          </div>
+          <div class="card-body rounded-bottom bg-primary p-5">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control border-0 p-4" placeholder="Your name" required=" " id="username" />
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control border-0 p-4" placeholder="Your email" required=" " id="email" />
+              </div>
+              <div class="form-group">
+              </div>
+              <div>
+                <button class="btn btn-dark btn-block border-0 py-3" id="submitBtn" type="submit">Sign In Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+
+<script>
+  document.getElementById("submitBtn").addEventListener("click", function(event){
+    event.preventDefault();
+    var name = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+
+    if (!name) {
+      alert("Name cannot be empty!");
+    } else if (!email.endsWith("@snu.edu.in")) {
+      alert("Invalid email! Must end with @snu.edu.in");
+    } else {
+      window.location.href = 'index.html';
+    }
+  });
+</script>
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-7 col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>NH91, Tehsil Dadri, Greater Noida, Uttar Pradesh 201314</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+91-120-2662002</p>
+                        <p><i class="fa fa-envelope mr-2"></i>admissions@snu.edu.in</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Courses</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Mathematics</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Science</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Management</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>English</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Music</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 mb-5">
+                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Subscription</h5>
+                <p>Don't miss out on any new releases. Our Subscription is free and easy.Subscribe to stay up to date and get notifications. </p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+           
+            
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
